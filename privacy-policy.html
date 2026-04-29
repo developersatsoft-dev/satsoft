@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy & Terms of Use</title>
+    <title>Privacy Policy - SatSoft Apps</title>
     <style>
         :root {
             color-scheme: light;
@@ -13,6 +13,8 @@
             --muted: #5e6b7a;
             --accent: #1f7aff;
             --border: #dce7f2;
+            --soft: #edf5ff;
+            --soft-border: #cfe5ff;
         }
 
         * { box-sizing: border-box; }
@@ -21,17 +23,17 @@
             margin: 0;
             background: linear-gradient(180deg, #eef6ff 0%, var(--bg) 320px);
             color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.65;
         }
 
-        main {
-            width: min(920px, calc(100% - 32px));
+        .page {
+            width: min(940px, calc(100% - 32px));
             margin: 0 auto;
             padding: 48px 0;
         }
 
-        article {
+        .card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 24px;
@@ -46,7 +48,7 @@
 
         h1 {
             font-size: clamp(32px, 5vw, 48px);
-            letter-spacing: -0.04em;
+            letter-spacing: -0.03em;
         }
 
         h2 {
@@ -79,144 +81,212 @@
         }
 
         .notice {
-            background: #edf5ff;
-            border: 1px solid #cfe5ff;
+            background: var(--soft);
+            border: 1px solid var(--soft-border);
             border-radius: 18px;
             padding: 16px 18px;
             margin: 24px 0;
         }
+
+        .footer-note {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 32px;
+        }
     </style>
 </head>
 <body>
-<main>
-    <article>
-        <h1>Privacy Policy & Terms of Use</h1>
-        <p class="updated">Last updated: April 2026</p>
+<div class="page">
+    <div class="card">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: April 29, 2026</p>
 
         <div class="notice">
             <p>
-                This document applies to all mobile applications published by us.
-                It explains how we handle user information and the terms that apply when using our apps.
+                This Privacy Policy applies to mobile applications published by SatSoft or
+                developersatsoft-dev that link to this page. The exact data handled by each app
+                may vary depending on the app's features, permissions, advertising setup,
+                analytics setup, and purchase options.
             </p>
         </div>
 
-        <h2>Part 1: Privacy Policy</h2>
-
-        <h3>1. Introduction</h3>
+        <h2>1. Introduction</h2>
         <p>
-            We respect your privacy. This Privacy Policy explains how we collect, use,
-            and protect information when you use our mobile applications.
+            We respect your privacy. This Privacy Policy explains how our mobile applications
+            collect, use, share, retain, and protect information. By using an app that links to
+            this policy, you acknowledge the practices described here.
         </p>
 
-        <h3>2. Information We Collect</h3>
+        <h2>2. Information Our Apps May Collect or Process</h2>
         <p>
-            Our apps collect limited information necessary for functionality,
-            performance improvement, and advertising.
+            Our apps are designed to collect only the information needed to provide app features,
+            improve reliability, support advertising where applicable, and process purchases where
+            applicable.
         </p>
         <ul>
             <li>
-                <strong>App data:</strong> settings, configurations, and preferences stored locally on your device.
+                <strong>Local app data:</strong> settings, preferences, saved items, app
+                configurations, device profiles, or other app-specific content that you create or
+                save in the app. This data is usually stored locally on your device.
             </li>
             <li>
-                <strong>Feedback:</strong> if you send feedback via email, it may include device and app information.
+                <strong>Feedback and support information:</strong> if you contact us, send
+                feedback, or report an issue, we may receive the message you choose to send,
+                your email address, and app or device context included in the message, such as
+                app version, package name, Android version, device model, locale, and feature
+                support status.
             </li>
             <li>
-                <strong>Analytics & diagnostics:</strong> via Firebase Analytics and Crashlytics (usage, crashes, performance).
+                <strong>Analytics and diagnostics:</strong> apps may use Firebase Analytics and
+                Firebase Crashlytics to understand basic app usage, diagnose crashes, improve
+                reliability, and measure performance. These services may process app events,
+                crash logs, diagnostics, device information, app identifiers, and related technical
+                data.
             </li>
             <li>
-                <strong>Advertising data:</strong> via Google AdMob (device identifiers, IP, interactions, ad performance).
+                <strong>Advertising-related information:</strong> apps that show ads may use
+                Google Mobile Ads (AdMob) and Google User Messaging Platform. Google and its
+                partners may process information such as device or advertising identifiers where
+                available, IP address, approximate location derived from IP, app interactions,
+                ad performance data, diagnostic information, consent choices, and signals used to
+                serve, measure, personalize where permitted, and protect advertising.
+            </li>
+            <li>
+                <strong>Purchase information:</strong> apps that offer in-app purchases may use
+                Google Play Billing. We may receive or store limited purchase-related information
+                needed to unlock or restore purchased features, such as product ID, purchase state,
+                order status, purchase token, and entitlement status. We do not receive or store
+                your full payment card details.
             </li>
         </ul>
 
-        <h3>3. Information We Do Not Collect</h3>
+        <h2>3. Information We Do Not Intentionally Collect</h2>
         <ul>
-            <li>No account required</li>
-            <li>No collection of name, phone number, contacts, photos, or precise location</li>
-            <li>We do not sell personal data</li>
+            <li>We do not require users to create a SatSoft account unless a specific app states otherwise.</li>
+            <li>We do not intentionally collect your contacts, photos, camera content, or precise location unless a specific app feature clearly requests and explains that access.</li>
+            <li>We do not sell personal information.</li>
+            <li>We do not collect full credit card numbers, bank account details, or other payment credentials. Purchases are processed by Google Play or the applicable app store.</li>
         </ul>
 
-        <h3>4. Permissions</h3>
+        <h2>4. Permissions</h2>
+        <p>
+            The permissions requested by each app depend on the features it provides. Common
+            permissions may include:
+        </p>
         <ul>
-            <li><strong>Internet:</strong> for ads, analytics, and services</li>
-            <li><strong>Network state:</strong> for connectivity handling</li>
-            <li>Other permissions depend on specific app features</li>
+            <li><strong>Internet and network access:</strong> used for ads, analytics, diagnostics, purchase validation, support links, and external links.</li>
+            <li><strong>Network state:</strong> used to support network-aware app behavior and third-party services.</li>
+            <li><strong>Notifications:</strong> used only if an app provides notification features and you allow them.</li>
+            <li><strong>Feature-specific permissions:</strong> some apps may request permissions such as infrared transmitter, Bluetooth, storage, media, camera, or location only when needed for the app's stated functionality.</li>
         </ul>
 
-        <h3>5. Data Storage</h3>
-        <p>
-            Data is primarily stored locally on your device. Some data may be processed
-            by third-party services.
-        </p>
-
-        <h3>6. Third-Party Services</h3>
+        <h2>5. How We Use Information</h2>
         <ul>
-            <li>Google AdMob</li>
-            <li>Firebase Analytics</li>
-            <li>Firebase Crashlytics</li>
-        </ul>
-        <p>
-            See:
-            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
-        </p>
-
-        <h3>7. Data Sharing</h3>
-        <p>
-            We do not sell data. Third-party services may process data under their own policies.
-        </p>
-
-        <h3>8. Data Retention</h3>
-        <p>
-            Users can delete data by clearing app data or uninstalling apps.
-        </p>
-
-        <h3>9. Children's Privacy</h3>
-        <p>
-            Our apps are not directed to children under 13.
-        </p>
-
-        <h3>10. Changes</h3>
-        <p>
-            We may update this policy anytime.
-        </p>
-
-        <h2>Part 2: Terms of Use</h2>
-
-        <h3>1. Acceptance</h3>
-        <p>
-            By using our apps, you agree to these terms.
-        </p>
-
-        <h3>2. Service</h3>
-        <p>
-            Our apps provide various utilities and may include ads and external links.
-        </p>
-
-        <h3>3. Usage</h3>
-        <ul>
-            <li>Use apps legally</li>
-            <li>No reverse engineering</li>
+            <li>To provide app features and remember your preferences.</li>
+            <li>To save and restore local app content or purchased entitlements where applicable.</li>
+            <li>To respond to feedback, support requests, or issue reports.</li>
+            <li>To improve app quality, performance, stability, and usability.</li>
+            <li>To show, measure, and protect advertising where an app includes ads.</li>
+            <li>To comply with applicable laws, platform policies, and security requirements.</li>
         </ul>
 
-        <h3>4. Disclaimer</h3>
+        <h2>6. Third-Party Services</h2>
         <p>
-            Apps are provided "as is" without guarantees.
+            Depending on the app, we may use third-party services including:
+        </p>
+        <ul>
+            <li><strong>Google Mobile Ads (AdMob):</strong> used to display, measure, personalize where permitted, and protect ads.</li>
+            <li><strong>Google User Messaging Platform:</strong> used to request and manage advertising consent where required.</li>
+            <li><strong>Firebase Analytics:</strong> used to understand app usage and improve app features.</li>
+            <li><strong>Firebase Crashlytics:</strong> used to collect crash reports and diagnostics so we can fix stability issues.</li>
+            <li><strong>Google Play Billing:</strong> used to process in-app purchases and restore purchased features.</li>
+        </ul>
+        <p>
+            These services are provided by Google or other third parties and process information
+            according to their own privacy practices and terms. Helpful references include the
+            <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+            <a href="https://developers.google.com/admob/android/privacy">Google Mobile Ads privacy guidance</a>.
         </p>
 
-        <h3>5. Liability</h3>
+        <h2>7. Data Sharing</h2>
         <p>
-            We are not responsible for damages.
+            We do not sell personal information ourselves. Information may be processed or shared
+            with third-party service providers for app operation, advertising, analytics,
+            diagnostics, fraud prevention, purchase processing, legal compliance, and service
+            improvement. These providers process information under their own policies and legal
+            requirements.
         </p>
 
-        <h3>6. Changes</h3>
+        <h2>8. Advertising Choices and Consent</h2>
         <p>
-            Terms may change at any time.
+            Apps that show ads may display personalized or non-personalized ads depending on your
+            region, your device settings, your consent choices, and Google advertising settings.
+            Where required, an app may show a consent message before using certain advertising
+            features. You can also manage ad personalization and advertising ID settings through
+            your device and Google account settings.
         </p>
 
-        <h3>7. Contact</h3>
+        <h2>9. In-App Purchases</h2>
         <p>
-            Email: <a href="mailto:developer.satsoft@gmail.com">developer.satsoft@gmail.com</a>
+            Some apps may offer paid features, premium access, subscriptions, or one-time
+            purchases. Digital purchases in apps distributed through Google Play are processed
+            through Google Play Billing unless another legally permitted billing option is clearly
+            presented. Prices, taxes, currencies, payment methods, refunds, and purchase history
+            are handled by Google Play or the applicable app store. We do not receive your full
+            payment details.
         </p>
-    </article>
-</main>
+
+        <h2>10. Data Retention and Deletion</h2>
+        <p>
+            Local app data can usually be deleted by using in-app delete options where available,
+            clearing app data, or uninstalling the app. Feedback emails and support messages are
+            retained only as long as needed to review and respond to your request, maintain
+            records, and comply with legal obligations. Analytics, crash, diagnostics, advertising,
+            and purchase-related data retention is managed by the relevant third-party services
+            according to their settings and policies.
+        </p>
+
+        <h2>11. Children's Privacy</h2>
+        <p>
+            Our apps are generally intended for a broad audience and are not directed to children
+            under 13 unless a specific app is clearly designed and published for children. We do
+            not knowingly collect personal information from children under 13. If you believe a
+            child has provided personal information, please contact us.
+        </p>
+
+        <h2>12. Security</h2>
+        <p>
+            We use reasonable safeguards to protect information handled by our apps. However, no
+            mobile app, device, network, or online service can be guaranteed to be completely
+            secure.
+        </p>
+
+        <h2>13. Your Choices</h2>
+        <ul>
+            <li>You can stop using an app at any time.</li>
+            <li>You can delete local app data by clearing app data or uninstalling the app.</li>
+            <li>You can manage app permissions in Android system settings.</li>
+            <li>You can manage ad personalization and advertising ID settings in your device or Google account settings.</li>
+            <li>You can contact us to ask privacy questions or request assistance with data related to support messages you sent to us.</li>
+        </ul>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on
+            this page with an updated date. Continued use of an app after the updated policy is
+            posted means you acknowledge the updated policy.
+        </p>
+
+        <h2>15. Contact Us</h2>
+        <p>
+            If you have questions about this Privacy Policy, contact us at:
+            <a href="mailto:developer.satsoft@gmail.com">developer.satsoft@gmail.com</a>.
+        </p>
+
+        <p class="footer-note">
+            Please also review our <a href="terms-of-service.html">Terms of Service</a>.
+        </p>
+    </div>
+</div>
 </body>
 </html>
