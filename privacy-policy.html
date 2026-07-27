@@ -99,7 +99,7 @@
 <div class="page">
     <div class="card">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: May 5, 2026</p>
+        <p class="updated">Last updated: July 27, 2026</p>
 
         <div class="notice">
             <p>
@@ -107,6 +107,12 @@
                 developersatsoft-dev that link to this page. The exact data handled by each app
                 may vary depending on the app's features, permissions, advertising setup,
                 analytics setup, and purchase options.
+            </p>
+            <p>
+                For <strong>Brain Rush</strong>, this includes local game progress and settings;
+                Google Mobile Ads, Firebase services, and anonymous leaderboards on Android;
+                optional Groq-powered online AI; and subscription processing through Google Play,
+                Apple's App Store, and RevenueCat. Platform-specific details are described below.
             </p>
         </div>
 
@@ -154,10 +160,28 @@
             </li>
             <li>
                 <strong>Purchase information:</strong> apps that offer in-app purchases may use
-                Google Play Billing. We may receive or store limited purchase-related information
-                needed to unlock or restore purchased features, such as product ID, purchase state,
-                order status, purchase token, and entitlement status. We do not receive or store
-                your full payment card details.
+                Google Play Billing or Apple's In-App Purchase system together with RevenueCat.
+                We and these providers may process an anonymous app user identifier, product ID,
+                transaction or receipt data, purchase state, order status, purchase token, and
+                entitlement status needed to complete, validate, manage, and restore purchases.
+                We do not receive or store your full payment card details.
+            </li>
+            <li>
+                <strong>Brain Rush leaderboard information (Android):</strong> when you use the
+                global leaderboard, Firebase Authentication creates an anonymous user identifier.
+                Brain Rush stores that identifier, an automatically generated player name, your
+                score, a country code derived from your device locale, and an update timestamp in
+                Firebase Firestore. Leaderboard names, country codes, and scores are visible to
+                other Brain Rush users. The iOS version does not currently provide this global
+                Firebase leaderboard.
+            </li>
+            <li>
+                <strong>Brain Rush online AI information:</strong> online AI is optional. If you
+                enable it, the prompts you submit and recent conversation context are sent to Groq
+                so it can generate a response. Any Groq API key that you enter is stored locally on
+                your device and is sent to Groq only to authorize those requests. Do not include
+                sensitive personal information in AI prompts. Offline tutor features do not send
+                prompts to Groq.
             </li>
         </ul>
 
@@ -201,15 +225,20 @@
             <li><strong>Google User Messaging Platform:</strong> used to request and manage advertising consent where required.</li>
             <li><strong>Firebase Analytics:</strong> used to understand app usage and improve app features.</li>
             <li><strong>Firebase Crashlytics:</strong> used to collect crash reports and diagnostics so we can fix stability issues.</li>
-            <li><strong>Google Play Billing:</strong> used to process in-app purchases and restore purchased features.</li>
+            <li><strong>Firebase Authentication and Cloud Firestore:</strong> used by Brain Rush on Android for anonymous sign-in and global leaderboards.</li>
+            <li><strong>Google Play Billing and Apple In-App Purchase:</strong> used to process subscriptions and restore purchased features on the applicable platform.</li>
+            <li><strong>RevenueCat:</strong> used to validate purchases, maintain subscription entitlement status, and support purchase restoration.</li>
+            <li><strong>Groq:</strong> used only when Brain Rush online AI is enabled to process prompts and return AI-generated answers.</li>
         </ul>
         <p>
             These services are provided by Google or other third parties and process information
             according to their own privacy practices and terms. Helpful references include the
             <a href="https://www.appodeal.com/home/privacy-policy/">Appodeal Privacy Policy</a>,
             <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
-            <a href="https://developers.google.com/admob/android/privacy">Google Mobile Ads privacy guidance</a>, and
-            <a href="https://play.google.com/about/developer-distribution-agreement.html">Google Play Developer Distribution Agreement</a>.
+            <a href="https://developers.google.com/admob/android/privacy">Google Mobile Ads privacy guidance</a>,
+            <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>,
+            <a href="https://groq.com/privacy-policy/">Groq Privacy Policy</a>, and
+            <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
         </p>
 
         <h2>7. Data Sharing</h2>
@@ -217,8 +246,9 @@
             We do not sell personal information ourselves. Information may be processed or shared
             with third-party service providers for app operation, advertising, mediation,
             analytics, diagnostics, fraud prevention, purchase processing, legal compliance, and
-            service improvement. This may include Appodeal, Google, ad exchanges, demand partners,
-            measurement providers, and other service providers involved in serving or analyzing ads.
+            service improvement. This may include Appodeal, Google, Apple, RevenueCat, Groq, ad
+            exchanges, demand partners, measurement providers, and other service providers involved
+            in delivering the app's features or serving and analyzing ads.
             These providers process information under their own policies and legal requirements.
         </p>
 
@@ -235,11 +265,11 @@
         <h2>9. In-App Purchases</h2>
         <p>
             Some apps may offer paid features, premium access, subscriptions, or one-time
-            purchases. Digital purchases in apps distributed through Google Play are processed
-            through Google Play Billing unless another legally permitted billing option is clearly
-            presented. Prices, taxes, currencies, payment methods, refunds, and purchase history
-            are handled by Google Play or the applicable app store. We do not receive your full
-            payment details.
+            purchases. Digital purchases are processed by Google Play or Apple's App Store on the
+            applicable platform. RevenueCat may process transaction and entitlement information to
+            validate access and restore purchases. Prices, taxes, currencies, payment methods,
+            refunds, and purchase history are handled by the applicable app store. We do not
+            receive your full payment details.
         </p>
 
         <h2>10. Data Retention and Deletion</h2>
@@ -272,7 +302,10 @@
             <li>You can stop using an app at any time.</li>
             <li>You can delete local app data by clearing app data or uninstalling the app.</li>
             <li>You can manage app permissions in Android system settings.</li>
+            <li>You can manage app permissions and tracking choices in iOS system settings.</li>
             <li>You can manage ad personalization and advertising ID settings in your device or Google account settings.</li>
+            <li>You can disable Brain Rush online AI to keep future tutor prompts on-device.</li>
+            <li>You can manage or cancel subscriptions from your Google Play or Apple App Store account.</li>
             <li>You can contact us to ask privacy questions or request assistance with data related to support messages you sent to us.</li>
         </ul>
 
