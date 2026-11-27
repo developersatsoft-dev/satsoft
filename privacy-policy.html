@@ -46,7 +46,7 @@
 <div class="page">
     <div class="card">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: November 25, 2026</p>
+        <p class="updated">Last updated: November 28, 2026</p>
 
         <p>
             This policy applies to all mobile apps published by <strong>SAT Soft</strong> — on Google Play
@@ -85,7 +85,7 @@
             they touch is processed <strong>on your device</strong> (except system speech recognition, noted below) and is never uploaded to us:
         </p>
         <ul>
-            <li><strong>Camera</strong> — Magnifier Glass (live magnification and on-device text recognition) and Video Teleprompter / Promptly (recording video).</li>
+            <li><strong>Camera</strong> — Magnifier Glass (live magnification and on-device text recognition), Video Teleprompter / Promptly (recording video), and BoothPop (taking photo strips; the optional Pose Challenge also uses on-device face detection, see &ldquo;Face data in BoothPop&rdquo; below).</li>
             <li><strong>Microphone</strong> — Video Teleprompter / Promptly, to record audio with your video; Smart TV Remote, only for optional voice commands (see section 3).</li>
             <li><strong>Photos and media</strong> — AI Photo Blur (on-device face and background detection), Clean Share (removing EXIF data), SpaceLens (analysing what uses your storage), and saving recordings to your gallery.</li>
             <li><strong>Installed app list</strong> — SpaceLens only, to show which apps use the most storage.</li>
@@ -95,6 +95,15 @@
         <p>
             You can revoke any permission at any time in your device settings.
         </p>
+
+        <h3 id="face-data">Face data in BoothPop</h3>
+        <ul>
+            <li><strong>What is used.</strong> Only in BoothPop's optional <em>Pose Challenge</em> camera mode, the app looks at the live camera preview to check whether you are doing the requested pose (for example smiling, winking or tilting your head). For each preview frame it reads the position and size of each face in the frame, the head tilt, how open each eye is and the shape of the mouth (smile). It does not create a face template or faceprint, does not identify or recognise who you are, and does not use Face ID, the TrueDepth camera or any face-based authentication.</li>
+            <li><strong>How it is processed.</strong> The detection runs entirely on your device with the operating system's built-in tools (Apple Vision on iOS, Google ML Kit on-device face detection on Android). The results are used only to decide when to take the photo and to show the on-screen pose hints.</li>
+            <li><strong>Storage and retention.</strong> Face data is kept only in the device's memory for the frame being checked (a fraction of a second) and is then discarded. It is never written to storage, never saved with your photos, and is gone as soon as you leave the camera or close the app.</li>
+            <li><strong>Sharing.</strong> Face data is never uploaded, never sent to us, and never shared with any third party, including our advertising, analytics and crash-reporting providers. It is not used for advertising, analytics, profiling or to train any model.</li>
+            <li><strong>Deletion and choice.</strong> Because face data is never stored, there is nothing to delete. Pose Challenge is optional: the other camera modes do not use face detection, and you can deny or revoke camera access at any time.</li>
+        </ul>
 
         <h2>3. Optional online features in Brain Rush and BoothPop</h2>
         <p>
@@ -157,6 +166,7 @@
         <h2>6. Retention and deletion</h2>
         <ul>
             <li><strong>On-device data</strong> — deleted when you clear the app's storage or uninstall the app.</li>
+            <li><strong>BoothPop face data</strong> — not retained: it exists only in memory while a camera frame is checked during Pose Challenge and is discarded immediately (see &ldquo;Face data in BoothPop&rdquo; in section 2).</li>
             <li><strong>Leaderboard entries</strong> — kept until you or we remove them; email us to delete one.</li>
             <li><strong>BoothPop style suggestions</strong> — kept while we review them and, for styles we publish, for as long as the style is available; email us to delete yours.</li>
             <li><strong>Support emails</strong> — deleted once your request is resolved.</li>
